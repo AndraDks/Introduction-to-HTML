@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neptune</title>
+    <style>
+      body {
+        background-image: url("./images/galaxy.gif");
+        color: aqua;
+      }
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: rgb(236, 34, 34);
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option value="index5.html">Mars</option>
+      <option value="index6.html">Jupiter</option>
+      <option value="index7.html">Saturn</option>
+      <option value="index8.html">Uranus</option>
+      <option selected value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option value="index.html">Milky Way</option>
+    </select>
+
+    <h1 style="color: #c03030">Planet NEPTUNE</h1>
+
+    <div style="text-align: center" class="card">
+      <p style="width: 50%; margin-left: 30px; font-size: larger">
+         Neptune is
+        the eighth and farthest planet from the Sun. It is the <i><b>fourth-largest
+        planet in the Solar System by diameter, <u>approximately 49,244 kilometers (30,598 miles)</b></i></u>, the third-most-massive planet,
+        and the densest giant planet. It is 17 times the mass of Earth, and
+        slightly more massive than its near-twin Uranus. Neptune is denser and
+        physically smaller than Uranus because its greater mass causes more
+        gravitational compression of its atmosphere. Being composed primarily of
+        gases and liquids, it has no well-defined solid surface. The planet
+        orbits the Sun once every 164.8 years at an orbital distance of 30.1
+        astronomical units (4.5 billion kilometres; 2.8 billion miles). Neptune's <i><b>temperatures can drop to incredibly chilly levels, averaging around <u> -200 °C (-392 degrees Fahrenheit)</b></i></u>. As for its entourage, this distant planet is <i><b><u>orbited by 14 confirmed moons</u></b></i>, each adding to the mystique of this icy giant in our solar system. It is
+        named after the Roman god of the sea and has the astronomical symbol ♆,
+        representing Neptune's trident. 
+      </p>
+    </div>
+
+    <img
+      src="images/neptune.gif"
+      style="opacity: 0.7; float: right; margin-top: -300px; margin-right: 50px;"
+    />
+
+    <a target="_blank" href="https://science.nasa.gov/neptune"
+      >CLICK for more info</a
+    >
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+    </script>
+  </body>
+</html>

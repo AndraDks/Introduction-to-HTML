@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mars</title>
+    <style>
+      body {
+        background-image: url("./images/galaxy.gif");
+        color: aqua;
+      }
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: #c03030;
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option selected value="index5.html">Mars</option>
+      <option value="index6.html">Jupiter</option>
+      <option value="index7.html">Saturn</option>
+      <option value="index8.html">Uranus</option>
+      <option value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option value="index.html">Milky Way</option>
+    </select>
+
+    <h1 style="color: #c03030">Planet MARS</h1>
+
+    <div style="text-align: center" class="card">
+      <!-- <img class="image" src="images/earth.png" alt=""> -->
+      <p style="width: 50%; margin-left: 30px; font-size: larger">
+        Mars is the fourth planet and the furthest terrestrial planet from the
+        Sun. The reddish color of its surface is due to finely grained iron(III)
+        oxide dust in the soil, giving it the nickname "the Red Planet".
+        Mars's radius is second smallest among the planets in the Solar System
+        at 3,389.5 km (2,106 mi). The Martian dichotomy is visible on the
+        surface: on average, the terrain on Mars's northern hemisphere is
+        flatter and lower than its southern hemisphere. Mars has a thin
+        atmosphere made primarily of carbon dioxide, and two <b><i>irregularly shaped
+        natural satellites: <u>Phobos and Deimos</i></b></u>. Geologically, Mars is fairly
+        active, with dust devils sweeping across the landscape and marsquakes
+        (Martian analog to earthquakes) trembling underneath the ground. The
+        surface of Mars hosts a large shield volcano (Olympus Mons) and one of
+        the largest canyons in the Solar System (Valles Marineris). Mars's
+        significant orbital eccentricity and axial tilt cause large seasonal
+        changes to the polar ice caps' coverage and <u><i><b>temperature swings between
+        −110 °C (−166 °F) to 35 °C (95 °F)</b></i></u> on the surface. A Martian solar day
+        (sol) is equal to 24.5 hours and a Martian solar year is equal to 1.88
+        Earth years. Like the other planets in the Solar System, Mars was formed
+        approximately 4.5 billion years ago. During the Noachian period from
+        about 4.1 to 3.7 billion years ago, <u><i><b>Mars's surface area	is 144.37×106 km2</b></i></u>, it was marked by meteor
+        impacts, valley formation, erosion, and the possible presence of water
+        oceans. The Hesperian period from 3.7 to 3.2–2 billion years ago was
+        dominated by widespread volcanic activity and flooding that carved
+        immense outflow channels. 
+      </p>
+    </div>
+    <img
+      src="images/mars.gif"
+      style="opacity: 0.7; float: right; margin-top: -450px; margin-right: -160px; width: 850px;"
+    />
+
+    <a
+      target="_blank"
+      href="https://science.nasa.gov/mars"
+      >CLICK for more info</a
+    >
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+    </script>
+  </body>
+</html>

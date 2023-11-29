@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milky Way</title>
+    <style>
+      body {
+        background-image: url("./images/galaxy.jpg");
+        color: rgb(12, 231, 231);
+        font-size: larger;
+        background-image: cover;
+        background-image: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      img {
+        width: 700px;
+        height: auto;
+        opacity: 0.8;
+      }
+
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: rgb(224, 48, 48);
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <label style="color: aqua; font-size: larger" for="planets"
+      >Choose a planet:</label
+    >
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option value="index5.html">Mars</option>
+      <option value="index6.html">Jupiter</option>
+      <option value="index7.html">Saturn</option>
+      <option value="index8.html">Uranus</option>
+      <option value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option selected value="index.html">Milky Way</option>
+    </select>
+    <!-- <a href="index2.html">Go to page 2</a> -->
+    <h1 style="font-family: Arial, Helvetica, sans-serif">
+      Deep in the Milky Way Galaxy &#127758; the Solar System &#9728;&#65039;
+    </h1>
+
+    <p style="font-size: larger">
+        Our solar system, a captivating celestial tapestry, showcases one star, our radiant Sun, as its centerpiece. Orbiting this stellar behemoth are eight diverse planets, each with its unique charm and mysteries, alongside five officially recognized dwarf planets that quietly navigate the Kuiper belt, adding depth to our understanding of celestial bodies.
+
+        But the celestial drama doesn't end there. Accompanying these planets are a staggering count of at least 290 moons, each with its own story and significance in shaping the cosmic ballet. Amidst this cosmic orchestra, an orchestra of over 1.3 million asteroids and approximately 3,900 comets whirl and weave their way through the vastness of space, contributing their ethereal presence to the wonders of our celestial neighborhood.
+    </p>
+
+    <div style="color: #eb0606;">
+      <iframe
+        width="640"
+        height="360"
+        src="https://www.youtube.com/embed/zF7U0rcwb4o"
+        frameborder="0"
+        allowfullscreen
+        style="border-radius: 50px"
+      ></iframe>
+
+      <input
+        type="radio"
+        name="option"
+        value="Mercury"
+        id="Mercury"
+        checked
+        onchange="changeFormula()"
+      />Mercury
+      <input
+        type="radio"
+        name="option"
+        value="Venus"
+        id="Venus_option"
+        onchange="changeFormula()"
+      />Venus
+      <input
+        checked
+        type="radio"
+        name="option"
+        value="Earth"
+        id="Earth_option"
+        onchange="changeFormula()"
+      />EARTH &#127758;
+      <input
+        type="radio"
+        name="option"
+        value="Mars"
+        id="Mars_option"
+        onchange="changeFormula()"
+      />Mars
+      <input
+        type="radio"
+        name="option"
+        value="Jupiter"
+        id="Jupiter_option"
+        onchange="changeFormula()"
+      />Jupiter
+      <input
+        type="radio"
+        name="option"
+        value="Saturn"
+        id="Saturn_option"
+        onchange="changeFormula()"
+      />Saturn
+      <input
+        type="radio"
+        name="option"
+        value="Uranus"
+        id="Uranus_option"
+        onchange="changeFormula()"
+      />Uranus
+      <input
+        type="radio"
+        name="option"
+        value="Neptune"
+        id="Neptune_option"
+        onchange="changeFormula()"
+      />Neptune
+      <input
+        type="radio"
+        name="option"
+        value="Pluto"
+        id="Pluto_option"
+        onchange="changeFormula()"
+      />Pluto
+
+
+      <img src="images/earth.png" name="formula" id="formula" />
+    </div>
+
+    <p style="font-size: larger"> Nestled within the Orion Arm, or Orion Spur, an outer spiral arm of the Milky Way galaxy, our solar system finds its home, a tiny yet mesmerizing part of the grand galactic ensemble.</p>
+
+    <div>
+        <video width="80%" src="images/production_id_4182916 (2160p).mp4" loop autoplay controls></video>
+    <a
+      style="color: #ec1414"
+      target="_blank"
+      href="https://science.nasa.gov/resource/the-milky-way-galaxy/"
+      >CLICK for more info</a>
+</div>
+
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+
+      function changeFormula() {
+        var radio = document.getElementsByName("option");
+        var formula = document.getElementById("formula");
+        if (radio[0].checked) {
+          formula.src = "images/mercury.png";
+        } else if (radio[1].checked) {
+          formula.src = "images/venus.png";
+        } else if (radio[2].checked) {
+          formula.src = "images/earth.png";
+        } else if (radio[3].checked) {
+          formula.src = "images/mars.png";
+        } else if (radio[4].checked) {
+          formula.src = "images/jupiter.png";
+        } else if (radio[5].checked) {
+          formula.src = "images/saturn.png";
+        } else if (radio[6].checked) {
+          formula.src = "images/uranus.png";
+        } else if (radio[7].checked) {
+          formula.src = "images/neptune.png";
+        } else if (radio[8].checked) {
+          formula.src = "images/pluto.png";
+        }
+      }
+    </script>
+  </body>
+</html>

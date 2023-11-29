@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jupiter</title>
+    <style>
+      body {
+        background-image: url("./images/galaxy.gif");
+        color: aqua;
+      }
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: rgb(233, 44, 44);
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option value="index5.html">Mars</option>
+      <option selected value="index6.html">Jupiter</option>
+      <option value="index7.html">Saturn</option>
+      <option value="index8.html">Uranus</option>
+      <option value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option value="index.html">Milky Way</option>
+    </select>
+
+    <h1 style="color: #c03030">Planet JUPITER</h1>
+
+    <div style="text-align: center" class="card">
+      <!-- <img class="image" src="images/earth.png" alt=""> -->
+      <p style="width: 50%; margin-left: 30px; font-size: larger">
+        Jupiter is the fifth planet from the Sun and <b><u><i>the largest in the Solar
+        System </i></b></u>. It is a gas giant with a mass more than two and a half times
+        that of all the other planets in the Solar System combined, and slightly
+        less than one one-thousandth the mass of the Sun. Jupiter orbits the Sun
+        at a distance of 5.20 AU (778.5 Gm) with an orbital period of 11.86
+        years. Jupiter is the third brightest natural object in the Earth's
+        night sky after the Moon and Venus, and it has been observed since
+        prehistoric times. It was named after Jupiter, the chief deity of
+        ancient Roman religion. The average <u><i><b>temperature on Jupiter is around -145°C </b></i></u>, while its vast system boasts an impressive <i><b>count of <u>79 known satellites</b></i></u>. Jupiter was the first planet to form, and its
+        inward migration during the primordial Solar System impacted much of the
+        formation history of the other planets. Jupiter is primarily composed of
+        hydrogen (90% by volume), followed by helium, which makes up a quarter
+        of its mass and a tenth of its volume. The ongoing contraction of
+        Jupiter's interior generates more heat than the planet receives from the
+        Sun. Its internal structure is believed to comprise an outer mantle of
+        liquid metallic hydrogen, and a diffuse inner core of denser material.
+        Because of its rapid rotation rate of 1 rotation per 10 hours, Jupiter's
+        shape is an oblate spheroid: it has a slight but noticeable bulge around
+        the equator. 
+      </p>
+    </div>
+    <img
+      src="images/jupiter.gif"
+      style="opacity: 0.7; float: right; margin-top: -400px; margin-right: 50px; width: 450px"
+    />
+
+    <a target="_blank" href="https://www.nasa.gov/stem-content/jupiter-lithograph/"
+      >CLICK for more info</a
+    >
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+    </script>
+  </body>
+</html>

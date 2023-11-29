@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saturn</title>
+    <style>
+      body {
+        background-image: url("./images/galaxy.gif");
+        color: aqua;
+      }
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: rgb(240, 25, 25);
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option value="index5.html">Mars</option>
+      <option value="index6.html">Jupiter</option>
+      <option selected value="index7.html">Saturn</option>
+      <option value="index8.html">Uranus</option>
+      <option value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option value="index.html">Milky Way</option>
+    </select>
+
+    <h1 style="color: #c03030">Planet SATURN</h1>
+
+    <div style="text-align: center" class="card">
+      <!-- <img class="image" src="images/earth.png" alt=""> -->
+      <p style="width: 50%; margin-left: 30px; font-size: larger">
+        Saturn is the sixth planet from the Sun and the second-largest in the
+        Solar System, after Jupiter. It is a gas giant with an average radius of
+        about nine-and-a-half times that of Earth. It has only one-eighth the
+        average density of Earth, but is over 95 times more massive. Saturn's
+        interior is thought to be composed of a rocky core, surrounded by a deep
+        layer of metallic hydrogen, an intermediate layer of liquid hydrogen and
+        liquid helium, and finally, a gaseous outer layer. Saturn has a pale
+        yellow hue due to ammonia crystals in its upper atmosphere. An
+        electrical current within the metallic hydrogen layer is thought to give
+        rise to Saturn's planetary magnetic field, which is weaker than Earth's,
+        but which has a magnetic moment 580 times that of Earth due to Saturn's
+        larger size. Saturn's magnetic field strength is around one-twentieth of
+        Jupiter's. The outer atmosphere is generally bland and lacking in
+        contrast, although long-lived features can appear. Wind speeds on Saturn
+        can reach 1,800 kilometres per hour (1,100 miles per hour). The planet
+        has a prominent ring system, which is composed mainly of ice particles,
+        with a smaller amount of rocky debris and dust. <u><i><b>At least 146 moons are
+        known to orbit the planet</b></i></u>, of which 63 are officially named; this does
+        not include the <u><b><i>hundreds of moonlets in its rings</b></i></u>. Titan, Saturn's
+        largest moon and the second largest in the Solar System, is larger
+        (while less massive) than the planet Mercury and is the only moon in the
+        Solar System to have a substantial atmosphere. Saturn is a gas giant
+        composed predominantly of hydrogen and helium. It lacks a definite
+        surface, though it is likely to have a solid core. Saturn's rotation
+        causes it to have the shape of an oblate spheroid; that is, it is
+        flattened at the poles and bulges at its equator. <u><i><b>Its equatorial radius
+        is more than 10% larger than its polar radius: 60,268 km versus 54,364
+        km</b></i></u>. Jupiter, Uranus, and Neptune, the other giant planets in the Solar
+        System, are also oblate but to a lesser extent. Saturn's average <u><i><b>temperature, due to its distance from the Sun, hovers around -178°C</b></i></u>, making it one of the chilliest planets in our solar system.
+      </p>
+    </div>
+
+    <img
+      src="images/saturn.gif"
+      style="opacity: 0.7; float: right; margin-top: -500px; margin-right: 50px"
+    />
+
+    <a target="_blank" href="https://science.nasa.gov/saturn/"
+      >CLICK for more info</a
+    >
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+    </script>
+  </body>
+</html>

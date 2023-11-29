@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uranus</title>
+    <style>
+      body {
+        background-image: url("./images/galaxy.gif");
+        color: aqua;
+      }
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: rgb(240, 21, 21);
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+    </style>
+  </head>
+  <body>
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option value="index5.html">Mars</option>
+      <option value="index6.html">Jupiter</option>
+      <option value="index7.html">Saturn</option>
+      <option selected value="index8.html">Uranus</option>
+      <option value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option value="index.html">Milky Way</option>
+    </select>
+
+    <h1 style="color: #c03030">Planet URANUS</h1>
+
+    <div style="text-align: center" class="card">
+      <p style="width: 50%; margin-left: 30px; font-size: larger">
+        Uranus is the seventh planet from the Sun. It is a gaseous cyan-coloured ice
+        giant. Most of the planet is made of water, ammonia, and methane in a
+        supercritical phase of matter, which in astronomy is called 'ice' or
+        volatiles. The planet's atmosphere has a complex layered cloud structure
+        and has the lowest minimum <u><i><b>temperature of 49 K (−224 °C; −371 °F)</b></i></u> out of
+        all Solar System's planets. It has a marked axial tilt of 97.8° with a
+        retrograde rotation rate of 17 hours. This means that in an 84 Earth
+        years orbital period around the Sun, its poles get around 42 years of
+        continuous sunlight, followed by 42 years of continuous darkness. Uranus
+        has the third-largest diameter and fourth-largest mass among the Solar
+        System's planets. Based on current models, inside its volatile mantle
+        layer is a rocky core, and surrounding it is a thick hydrogen and helium
+        atmosphere. Trace amounts of hydrocarbons (thought to be produced via
+        hydrolysis) and carbon monoxide along with carbon dioxide (thought to
+        have been originated from comets) have been detected in the upper
+        atmosphere. There are many unexplained climate phenomena in Uranus's
+        atmosphere, such as its peak wind speed of 900 km/h (560 mph),
+        variations in its polar cap and its erratic cloud formation. The planet
+        also has very low internal heat compared to other giant planets, which
+        is still unexplained. Uranus, roughly <u><i><b>four times the diameter of Earth</u></i></b>, surprises with its collection of <b><i><u>27 known moons</u></i></b>, each contributing to the intrigue surrounding this ice giant in our solar system.
+      </p>
+    </div>
+    <img
+      src="images/uranus.gif"
+      style="opacity: 0.7; float: right; margin-top: -490px; margin-right: 50px; width: 550px;"
+    />
+
+    <a target="_blank" href="https://science.nasa.gov/uranus"
+      >CLICK for more info</a
+    >
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercury</title>
+    <style>
+      /* body{
+    background-image: url("./images/mercury.png");
+    opacity: 0.8;
+    color: rgb(250, 250, 250);
+    background-image: cover;
+  background-image: no-repeat;
+  /* background-position: center ; */
+      /* background-repeat: no-repeat;
+  background-size: cover;
+    } */
+
+      body {
+        background-image: url("./images/galaxy.gif");
+        color: rgb(112, 211, 211);
+      }
+      select {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-bottom: 2px solid #c03030;
+        border-right: 2px solid #c03030;
+        outline: none;
+        padding: 0.005em 0.7em;
+        border-radius: 10px;
+        background-color: #7c7c7c2b;
+        color: #c03030;
+        font-family: inherit;
+        font-size: 140%;
+        width: calc(60% - 200px);
+      }
+
+      /* .card{
+    width: 100%;
+    height: 1000px;
+} */
+    </style>
+  </head>
+  <body>
+    <select id="planets" onchange="urlHandler(this.value)">
+      <option selected value="index2.html">Mercury</option>
+      <option value="index3.html">Venus</option>
+      <option value="index4.html">Earth</option>
+      <option value="index5.html">Mars</option>
+      <option value="index6.html">Jupiter</option>
+      <option value="index7.html">Saturn</option>
+      <option value="index8.html">Uranus</option>
+      <option value="index9.html">Neptune</option>
+      <option value="index10.html">Pluto</option>
+      <option value="index.html">Milky Way</option>
+    </select>
+
+    <h1 style="color: #c03030">Planet MERCURY</h1>
+
+    <div class="card">
+        <p style="width: 50%; margin-left: 30px; font-size: larger">
+            Mercury is the first planet from the Sun and the smallest in the Solar
+            System. It is a terrestrial planet with a heavily cratered surface due
+            to overlapping impact events. These features are well preserved since
+            the planet has no geological activity and an extremely tenuous
+            atmosphere called an exosphere. Despite being the smallest planet in the
+            Solar System with a mean <b><u>diameter of 4,880 km (3,030 mi)</u></b>, 38% of that of
+            Earth, <b>Mercury is dense enough to have roughly the same surface gravity
+            as Mars</b>. Mercury has a dynamic magnetic field with a strength about 1%
+            of that of Earth's and has <b><u><i>no</i> natural <i>satellites</i></b></u>. Having almost no
+            atmosphere to retain heat, Mercury has surface <u><b><i>temperatures that change
+            wildly during the day, ranging from 100 K (−173 °C; −280 °F) at night to
+            700 K (427 °C; 800 °F)during sunlight</i></b></u> across the equator regions. At
+            Mercury's poles there are large reservoirs of water ices that are never
+            exposed to direct sunlight, which has an estimated mass of about
+            0.025–0.25% the Antarctic ice sheet. There are many competing
+            hypotheses about Mercury's origins and development, some of which
+            incorporate collision with planetesimal and rock vaporization. Like
+            Venus, Mercury orbits the Sun within Earth's orbit, making it appear in
+            Earth's sky only as a "morning star" or "evening star" that is
+            relatively close to the Sun.
+        </p>
+        
+    </div>
+
+    <img
+      src="images/mercury.gif"
+      style="opacity: 0.7; float: right; margin-top: -400px; margin-right: 50px; "
+    />
+
+    <a
+      target="_blank"
+      href="https://science.nasa.gov/mercury"
+      >CLICK for more info</a
+    >
+    <script>
+      function urlHandler(value) {
+        window.location.assign(`${value}`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <style>
+        /* body{
+    background-image: url("./images/earth.png");
+    color: rgb(250, 250, 250);
+    background-image: cover;
+  background-image: no-repeat;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
+    } */
+
+    body{
+    background-image: url("./images/galaxy.gif");
+    color: aqua
+    }
+
+    select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid #c03030;
+    border-right: 2px solid #c03030;
+    outline: none;
+    padding: 0.005em 0.7em;
+    border-radius: 10px;
+    background-color: #7c7c7c2b;
+    color: rgb(219, 14, 14);
+    font-family: inherit;
+    font-size: 140%;
+    width: calc(60% - 200px);
+}
+.image{
+    position: relative;
+    top: -10px;
+
+}
+    </style>
+</head>
+<body>
+
+    <select id="planets" onchange="urlHandler(this.value)">
+        <option value="index2.html">Mercury</option>
+        <option value="index3.html">Venus</option>
+        <option selected value="index4.html">Earth</option>
+        <option value="index5.html">Mars</option>
+        <option value="index6.html">Jupiter</option>
+        <option value="index7.html">Saturn</option>
+        <option value="index8.html">Uranus</option>
+        <option value="index9.html">Neptune</option>
+        <option value="index10.html">Pluto</option>
+        <option value="index.html">Milky Way</option>
+
+    </select>
+
+    <h1 style="color: #c03030;">Planet EARTH</h1>
+
+    <div  style="text-align: center;" class="card">
+        <!-- <img class="image" src="images/earth.png" alt=""> -->
+        <p style="width: 50%; margin-left: 30px; font-size: larger;">Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water. Earth <u><i><b>surface area is 510072000 km2</b></i></u>  and almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust. The remaining 29.2% of Earth's crust is land, most of which is located in the form of continental landmasses within one hemisphere, Earth's land hemisphere. Most of Earth's land is somewhat humid and covered by vegetation, while large sheets of ice at Earth's polar deserts retain more water than Earth's groundwater, lakes, rivers and atmospheric water combined. Earth's crust consists of slowly moving tectonic plates, which interact to produce mountain ranges, volcanoes, and earthquakes. Earth has a liquid outer core that generates a magnetosphere capable of deflecting most of the destructive solar winds and cosmic radiation. Earth has a dynamic atmosphere, which sustains Earth's surface conditions and protects it from most meteoroids and UV-light at entry. It has a composition of primarily nitrogen and oxygen. Water vapor is widely present in the atmosphere, forming clouds that cover most of the planet. The water vapor acts as a greenhouse gas and, together with other greenhouse gases in the atmosphere, particularly carbon dioxide (CO2), creates the conditions for both liquid surface water and water vapor to persist via the capturing of energy from the Sun's light. This process maintains the current average surface <u><b><i>temperature of 14.76 °C</i></b></u>, at which water is liquid under atmospheric pressure.  Earth is orbited by <i><b>one permanent natural satellite, <u>the Moon</b></i></u>, which orbits Earth at 384,400 km (1.28 light seconds) and is roughly a quarter as wide as Earth.</p>
+        
+        </div>
+
+<img src="images/earth.gif" style="opacity: 0.7; float: right; margin-top: -500px; margin-right: 50px; width: 550px" >
+
+<div style="display: inline-block;">
+<video src="images/pexels_videos_1851190 (2160p).mp4" style="width: 800px;" autoplay loop controls></video>
+
+
+    <a target="_blank" href="https://www.nasa.gov/stem-content/earth-the-water-planet/">CLICK for more info</a>
+
+</div>
+    <script>
+    function urlHandler(value) {                               
+        window.location.assign(`${value}`);
+    }
+
+
+    </script>
+</body>
+</html>

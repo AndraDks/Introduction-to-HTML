@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <style>
+        /* body{
+    background-image: url("./images/venus.png");
+    opacity: 0.8;
+    color: rgb(250, 250, 250);
+    background-image: cover;
+  background-image: no-repeat;
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+    } */
+    body{
+    background-image: url("./images/galaxy.gif");
+    color: aqua
+    }
+
+    select{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid #c03030;
+    border-right: 2px solid #c03030;
+    outline: none;
+    padding: 0.005em 0.7em;
+    border-radius: 10px;
+    background-color: #7c7c7c2b;
+    color: rgb(230, 28, 28);
+    font-family: inherit;
+    font-size: 140%;
+    width: calc(60% - 200px);
+}
+    </style>
+    </style>
+</head>
+<body>
+
+    <select id="planets" onchange="urlHandler(this.value)">
+        <option value="index2.html">Mercury</option>
+        <option selected value="index3.html">Venus</option>
+        <option value="index4.html">Earth</option>
+        <option value="index5.html">Mars</option>
+        <option value="index6.html">Jupiter</option>
+        <option value="index7.html">Saturn</option>
+        <option value="index8.html">Uranus</option>
+        <option value="index9.html">Neptune</option>
+        <option value="index10.html">Pluto</option>
+        <option value="index.html">Milky Way</option>
+
+    </select>
+
+    <h1 style="color: #c03030;">Planet VENUS</h1>
+    
+
+    <div class="card">
+        <p style="width: 50%; margin-left: 30px; font-size: larger;">
+            Venus is the second planet from the Sun. It is a rocky planet with the densest atmosphere of all the rocky bodies in the Solar System, and the onlyone with a mass and <u><b><i>size that is close to that of its orbital neighbour Earth</b></i></u>. Orbiting inferiorly, it appears in Earth's sky always close to the Sun, as either a "morning star"  or an "evening star". While thisis also true for Mercury, Venus appears much more prominently, since it isthe third brightest object in Earth's sky after the Moon and the Sun, appearing brighter than any other star-like classical planet or any fixed star. With such prominence in Earth's sky, Venus has historically been a common and important object for humans, in both their cultures and astronomy. Venus has a weak induced magnetosphere and an especially thick carbondioxide atmosphere, which creates, together with its global sulfuric acid cloud cover, an extreme greenhouse effect. This results at the surface in a mean <u><i><b>temperature of 737 K (464 °C; 867 °F)</b></i></u>, the pressure, temperature and also radiation are very much like at Earth's surface and has <b><u><i>no</i> natural <i>satellites</i></b></u>.. 
+        </p>
+        </div>
+
+<img src="images/venus.gif" style="opacity: 0.7; float: right; margin-top: -350px; margin-right: 50px; width: 550px" >
+
+        <a target="_blank" href="https://science.nasa.gov/venus/">CLICK for more info</a>
+    <script>
+    function urlHandler(value) {                               
+        window.location.assign(`${value}`);
+    }
+    </script>
+</body>
+</html>
